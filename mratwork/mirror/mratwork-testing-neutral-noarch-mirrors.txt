@@ -1,0 +1,2 @@
+http://rpms.mratwork.com/repo/mratwork/testing/neutral/noarch/
+http://rpms.potissima.com/repo/mratwork/testing/neutral/noarch/

@@ -1,0 +1,2 @@
+http://rpms.mratwork.com/repo/mratwork/release/centos5/i386/
+http://rpms.potissima.com/repo/mratwork/release/centos5/i386/

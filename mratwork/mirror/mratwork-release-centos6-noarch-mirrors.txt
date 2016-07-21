@@ -1,0 +1,2 @@
+http://rpms.mratwork.com/repo/mratwork/release/centos6/noarch/
+http://rpms.potissima.com/repo/mratwork/release/centos6/noarch/

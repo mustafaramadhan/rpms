@@ -1,0 +1,2 @@
+http://rpms.mratwork.com/repo/mratwork/SRPMS/
+http://rpms.potissima.com/repo/mratwork/SRPMS/
