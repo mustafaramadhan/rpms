@@ -11,6 +11,10 @@ CURRBASENAME=${PWD##*/}
 
 echo "* Start for mratwork.repo mirror"
 
+if [ -d /var/cache/yum ] ; then
+	'rm' -rf /var/cache/yum/*
+fi
+
 if [ ! -f $CURRPATH/mratwork-mirror.repo ] ; then
 	echo
 	echo "  - Need '$CURRPATH/mratwork-mirror.repo' file"

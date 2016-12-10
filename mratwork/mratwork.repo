@@ -1,63 +1,63 @@
 [mratwork-release-neutral-noarch]
 name=MRatWork - release-neutral-noarch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/neutral/noarch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-neutral-noarch-mirrors.txt
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/neutral/noarch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-neutral-noarch-mirrors.txt
 enabled=1
 gpgcheck=0
 
 [mratwork-release-neutral-arch]
 name=MRatWork - release-neutral-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/neutral/$basearch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-neutral-$basearch-mirrors.txt
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/neutral/$basearch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-neutral-$basearch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-release-version-noarch]
 name=MRatWork - release-version-noarch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos$releasever/noarch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos$releasever-noarch-mirrors.txt
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos$releasever/noarch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos$releasever-noarch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-release-version-arch]
 name=MRatWork - release-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos$releasever/$basearch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos$releasever-$basearch-mirrors.txt
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos$releasever/$basearch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos$releasever-$basearch-mirrors.txt
 enabled=1
 gpgcheck=0
 
 [mratwork-testing-neutral-noarch]
 name=MRatWork - testing-neutral-noarch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/neutral/noarch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-neutral-noarch-mirrors.txt
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/neutral/noarch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-neutral-noarch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-testing-neutral-arch]
 name=MRatWork - testing-neutral-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/neutral/$basearch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-neutral-$basearch-mirrors.txt
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/neutral/$basearch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-neutral-$basearch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-testing-version-noarch]
 name=MRatWork - testing-version-noarch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos$releasever/noarch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos$releasever-noarch-mirrors.txt
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos$releasever/noarch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos$releasever-noarch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-testing-version-arch]
 name=MRatWork - testing-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos$releasever/$basearch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos$releasever-$basearch-mirrors.txt
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos$releasever/$basearch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos$releasever-$basearch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-srpms]
 name=MRatWork - srpms
-#baseurl=http://rpms.mratwork.com/repo/mratwork/SRPMS/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-SRPMS-mirrors.txt
+baseurl=http://rpms.mratwork.com/repo/mratwork/SRPMS/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-SRPMS-mirrors.txt
 enabled=0
 gpgcheck=0
 
@@ -69,21 +69,21 @@ baseurl=http://dl.iuscommunity.org/pub/ius/stable/Redhat/$releasever/$basearch
 mirrorlist=http://dmirr.iuscommunity.org/mirrorlist/?repo=ius-el$releasever&arch=$basearch
 enabled=1
 gpgcheck=0
-exclude=mysql51* mysql56*
+exclude=mysql5* mysql56*
 
 [mratwork-ius-archive]
 name=MRatWork - IUS Community Packages for EL $releasever (archive) - arch
 baseurl=http://dl.iuscommunity.org/pub/ius/archive/Redhat/$releasever/$basearch
 enabled=1
 gpgcheck=0
-exclude=mysql51* mysql56*
+exclude=mysql5* mysql56*
 
 [mratwork-ius-testing]
-name=MRatWork - IUS Community Packages for EL $releasever (stable) - arch
+name=MRatWork - IUS Community Packages for EL $releasever (testing) - arch
 baseurl=http://dl.iuscommunity.org/pub/ius/testing/Redhat/$releasever/$basearch
 enabled=1
 gpgcheck=0
-exclude=mysql51* mysql56* mysql56*
+exclude=mysql5* mysql56*
 
 # ==================================
 
@@ -92,6 +92,22 @@ exclude=mysql51* mysql56* mysql56*
 name=MRatWork - Webtatic for CentOS $releasever - $basearch
 baseurl=http://repo.webtatic.com/yum/el$releasever/$basearch
 mirrorlist=https://mirror.webtatic.com/yum/el$releasever/$basearch/mirrorlist
+enabled=1
+gpgcheck=0
+exclude=mysql* nginx*
+
+[mratwork-webtatic-archive]
+name=MRatWork - Webtatic for CentOS $releasever Archive - $basearch
+baseurl=http://repo.webtatic.com/yum/el$releasever/$basearch
+mirrorlist=https://mirror.webtatic.com/yum/el$releasever-archive/$basearch/mirrorlist
+enabled=1
+gpgcheck=0
+exclude=mysql* nginx*
+
+[mratwork-webtatic-testing]
+name=MRatWork - Webtatic for CentOS $releasever Testing - $basearch
+baseurl=http://repo.webtatic.com/yum/el$releasever/$basearch
+mirrorlist=https://mirror.webtatic.com/yum/el$releasever-testing/$basearch/mirrorlist
 enabled=1
 gpgcheck=0
 exclude=mysql* nginx*
@@ -134,49 +150,11 @@ includepkgs=php-ffmpeg php-ioncube-loader
 
 [mratwork-epel]
 name=MRatWork - Extra Packages for EL $releasever - arch
-baseurl=http://download.fedoraproject.org/pub/epel/$releasever/$basearch
+#baseurl=http://download.fedoraproject.org/pub/epel/$releasever/$basearch
 mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-$releasever&arch=$basearch
 enabled=1
 gpgcheck=0
 exclude=postfix* exim* ssmtp* pdns*
-
-# ==================================
-
-# for atrpms
-[mratwork-atrpms]
-name=Kloxo-MR - Fedora Core $releasever -  - ATrpms
-baseurl=http://dl.atrpms.net/el$releasever-$basearch/atrpms/stable
-enabled=0
-gpgcheck=0
-exclude=clam*
-
-# ==================================
-
-# for rpmfusion
-[mratwork-rpmfusion-free-updates]
-name=MRatWork - RPM Fusion for EL $releasever - Free - Updates
-baseurl=http://download1.rpmfusion.org/free/el/updates/$releasever/$basearch/
-mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-el-updates-released-$releasever&arch=$basearch
-enabled=0
-gpgcheck=0
-
-# ==================================
-
-# for atomic
-[mratwork-atomic]
-name=MRatWork - CentOS / Red Hat Enterprise Linux $releasever - atomicrocketturtle.com
-mirrorlist=http://updates.atomicorp.com/channels/mirrorlist/atomic/centos-$releasever-$basearch
-enabled=0
-gpgcheck=0
-#includepkgs=*zend*
-
-# Almost Stable, release candidates for [atomic]
-[mratwork-atomic-testing]
-name= MRatWork - CentOS / Red Hat Enterprise Linux $releasever - atomicrocketturtle.com - (Testing)
-mirrorlist=http://updates.atomicorp.com/channels/mirrorlist/atomic-testing/centos-$releasever-$basearch
-enabled=0
-gpgcheck=0
-#includepkgs=*zend*
 
 # ==================================
 
@@ -221,6 +199,16 @@ name=Kloxo-MR - mariadb 32bit repo
 baseurl=http://yum.mariadb.org/10.0/centos/$releasever/$basearch/
 enabled=1
 gpgcheck=0
+
+# ==================================
+
+# for atrpms
+#[mratwork-atrpms]
+#name=Kloxo-MR - Fedora Core $releasever -  - ATrpms
+#baseurl=http://dl.atrpms.net/el$releasever-$basearch/atrpms/stable
+#enabled=0
+#gpgcheck=0
+#exclude=clam*
 
 # ==================================
 
@@ -269,24 +257,24 @@ gpgcheck=0
 # ==================================
 
 # for RSysLog
-[mratwork-rsyslog-v8-devel]
-name=MRatWork - Adiscon Rsyslog v8-devel for CentOS-$releasever-$basearch
-baseurl=http://rpms.adiscon.com/v8-devel/epel-$releasever/$basearch
-enabled=0
-gpgcheck=0
+#[mratwork-rsyslog-v8-devel]
+#name=MRatWork - Adiscon Rsyslog v8-devel for CentOS-$releasever-$basearch
+#baseurl=http://rpms.adiscon.com/v8-devel/epel-$releasever/$basearch
+#enabled=0
+#gpgcheck=0
 
-[mratwork-rsyslog-v8-stable]
-name=MRatWork - Adiscon Rsyslog v8-stable for CentOS-$releasever-$basearch
-baseurl=http://rpms.adiscon.com/v8-stable/epel-$releasever/$basearch
-enabled=1
-gpgcheck=0
+#[mratwork-rsyslog-v8-stable]
+#name=MRatWork - Adiscon Rsyslog v8-stable for CentOS-$releasever-$basearch
+#baseurl=http://rpms.adiscon.com/v8-stable/epel-$releasever/$basearch
+#enabled=0
+#gpgcheck=0
 
 # ==================================
 
 [mratwork-zfs]
 name=MRatWork - ZFS on Linux for EL $releasever
 baseurl=http://archive.zfsonlinux.org/epel/$releasever/$basearch/
-enabled=1
+enabled=0
 gpgcheck=0
 
 # ==================================
@@ -306,31 +294,19 @@ baseurl=https://repos.ulyaoth.net/CentOS/$releasever/$basearch/os/
 enabled=0
 gpgcheck=0
 
-[mratwork-cloudlinux]
-name=MRatWork - CloudLinux Repository
-baseurl=http://repo.cloudlinux.com/cloudlinux/$releasever/updates-testing/$basearch/
-enabled=0
-gpgcheck=0
-
-# ==================================
-[mratwork-gf]
-name=MRatWork - Ghettoforge packages that won't overwrite core distro packages.
-baseurl=http://mirror.symnds.com/distributions/gf/el/$releasever/gf/$basearch/
-enabled=0
-gpgcheck=0
-
 # ==================================
 
 [mratwork-rpmforge]
 name=MRatWork - RHEL $releasever - RPMforge.net - dag
-baseurl=http://apt.sw.be/redhat/el6/en/$basearch/rpmforge
-mirrorlist=http://apt.sw.be/redhat/el6/en/mirrors-rpmforge
+baseurl=http://apt.sw.be/redhat/el$releasever/en/$basearch/rpmforge
+mirrorlist=http://apt.sw.be/redhat/el$releasever/en/mirrors-rpmforge
 enabled=0
 gpgcheck=0
 
 [mratwork-rpmforge-extras]
 name=MRatWork - RHEL $releasever - RPMforge.net - extras
-baseurl=http://apt.sw.be/redhat/el6/en/$basearch/extras
-mirrorlist=http://apt.sw.be/redhat/el6/en/mirrors-rpmforge-extras
+baseurl=http://apt.sw.be/redhat/el$releasever/en/$basearch/extras
+mirrorlist=http://apt.sw.be/redhat/el$releasever/en/mirrors-rpmforge-extras
 enabled=0
 gpgcheck=0
+
