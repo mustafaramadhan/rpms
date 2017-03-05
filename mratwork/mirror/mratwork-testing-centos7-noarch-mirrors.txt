@@ -1,2 +1,4 @@
 http://rpms.mratwork.com/repo/mratwork/testing/centos7/noarch/
-http://rpms.potissima.com/repo/mratwork/testing/centos7/noarch/
+http://rpms.printographic.com/repo/mratwork/testing/centos7/noarch/
+http://rpms.mustafa.id/repo/mratwork/testing/centos7/noarch/
+http://rpms.armando.id/repo/mratwork/testing/centos7/noarch/

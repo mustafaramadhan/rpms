@@ -32,10 +32,13 @@ fi
 
 chmod -R o-w+r ${CURRPATH}
 
-echo "*** Delete old repodata dirs..."
-find ${CURRPATH}/ -type d -name "repodata" -exec rm -rf {} \; >/dev/null 2>&1
-
 echo "*** Process for SRPMS..."
+
+reposync --norepopath --source --config=mratwork-reposync.repo \
+	--delete \
+	--repoid=mratwork-srpms \
+	--download_path=${CURRPATH}/SRPMS
+
 createrepo ${OPTIONS} ${CURRPATH}/SRPMS
 
 for type in release testing ; do
@@ -45,20 +48,18 @@ for type in release testing ; do
 				mkdir -p ${CURRPATH}/${type}/${ver}/${item}
 			fi
 			echo "*** Process for '${type}-${ver}-${item}'..."
+			reposync --norepopath --config=mratwork-reposync.repo \
+				--delete \
+				--repoid=mratwork-${type}-${ver}-${item} \
+				--download_path=${CURRPATH}/${type}/${ver}/${item}
 			createrepo ${OPTIONS} ${CURRPATH}/${type}/${ver}/${item}
 		done
 	done
 done
 
-find ${CURRPATH}/ -type d -name ".repodata" -exec rm -rf {} \; >/dev/null 2>&1
-
 cd ${CURRPATH}
 
 sh /script/fix-chownchmod --client=rpms
-
-for dom in $(cat ${CURRPATH}/mirrorlist.inc|tr '\n' ' ') ; do
-	curl --header http://$(dom}/repo/mratwork/reposync.php
-do
 
 # Time interval in nanoseconds
 T="$(($(date +%s%N)-T))"

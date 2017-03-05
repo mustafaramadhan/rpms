@@ -1,2 +1,4 @@
 http://rpms.mratwork.com/repo/mratwork/release/neutral/noarch/
-http://rpms.potissima.com/repo/mratwork/release/neutral/noarch/
+http://rpms.printographic.com/repo/mratwork/release/neutral/noarch/
+http://rpms.mustafa.id/repo/mratwork/release/neutral/noarch/
+http://rpms.armando.id/repo/mratwork/release/neutral/noarch/
