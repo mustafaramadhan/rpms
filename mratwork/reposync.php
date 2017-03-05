@@ -16,5 +16,5 @@
 		file_put_contents('ready_sync', 'ok');
 		print("- Set to 'ready_sync'");
 	} else {
-		print("- Wrong original source (rpms.mratwork.com)");
+		print("- Wrong from original source (rpms.mratwork.com)");
 	}

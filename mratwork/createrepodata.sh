@@ -56,9 +56,16 @@ cd ${CURRPATH}
 
 sh /script/fix-chownchmod --client=rpms
 
-for dom in $(cat ${CURRPATH}/mirrorlist.inc|tr '\n' ' ') ; do
-	curl --header http://$(dom}/repo/mratwork/reposync.php
-do
+echo "*** Request mirror..."
+## get mirror list
+'rm' -f mratwork-SRPMS-mirrors.txt
+wget -N -nH -nd https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-SRPMS-mirrors.txt
+
+for i in $(cat mratwork-SRPMS-mirrors.txt|awk -F"/" '{print $3}'|tr '\n' ' ') ; do
+	## send for running reposync process in each mirror
+	echo "- To ${i}"
+	curl --header http://${i}/repo/mratwork/reposync.php >/dev/null 2>&1
+done
 
 # Time interval in nanoseconds
 T="$(($(date +%s%N)-T))"
