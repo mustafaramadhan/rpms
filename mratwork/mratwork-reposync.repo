@@ -1,7 +1,7 @@
 [mratwork-srpms]
 name=MRatWork - srpms
-#baseurl=http://rpms.mratwork.com/repo/mratwork/SRPMS/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-SRPMS-mirrors.txt
+baseurl=http://rpms.mratwork.com/repo/mratwork/SRPMS/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-SRPMS-mirrors.txt
 enabled=0
 gpgcheck=0
 
@@ -9,159 +9,159 @@ gpgcheck=0
 
 [mratwork-release-neutral-noarch]
 name=MRatWork - release-neutral-noarch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/neutral/noarch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-neutral-noarch-mirrors.txt
-enabled=1
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/neutral/noarch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-neutral-noarch-mirrors.txt
+enabled=0
 gpgcheck=0
 
 [mratwork-release-neutral-i386]
-name=MRatWork - release-neutral-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/neutral/i386/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-neutral-i386-mirrors.txt
+name=MRatWork - release-neutral-i386
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/neutral/i386/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-neutral-i386-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-release-neutral-x86_64]
-name=MRatWork - release-neutral-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/neutral/x86_64/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-neutral-x86_64-mirrors.txt
+name=MRatWork - release-neutral-x86_64
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/neutral/x86_64/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-neutral-x86_64-mirrors.txt
 enabled=0
 gpgcheck=0
 
 ## ---------------------------------
 
 [mratwork-release-centos5-noarch]
-name=MRatWork - release-version-noarch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos5/noarch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos5-noarch-mirrors.txt
+name=MRatWork - release-centos5-noarch
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos5/noarch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos5-noarch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-release-centos5-i386]
-name=MRatWork - release-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos5/i386/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos5-i386-mirrors.txt
-enabled=1
+name=MRatWork - release-centos5-i386
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos5/i386/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos5-i386-mirrors.txt
+enabled=0
 gpgcheck=0
 
 [mratwork-release-centos5-x86_64]
-name=MRatWork - release-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos5/x86_64/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos5-x86_64-mirrors.txt
-enabled=1
+name=MRatWork - release-centos5-x86_64
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos5/x86_64/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos5-x86_64-mirrors.txt
+enabled=0
 gpgcheck=0
 
 ## ---------------------------------
 
 [mratwork-release-centos6-noarch]
-name=MRatWork - release-version-noarch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos6/noarch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos6-noarch-mirrors.txt
+name=MRatWork - release-centos6-noarch
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos6/noarch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos6-noarch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-release-centos6-i386]
-name=MRatWork - release-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos6/i386/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos6-i386-mirrors.txt
-enabled=1
+name=MRatWork - release-centos6-i386
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos6/i386/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos6-i386-mirrors.txt
+enabled=0
 gpgcheck=0
 
 [mratwork-release-centos6-x86_64]
-name=MRatWork - release-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos6/x86_64/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos6-x86_64-mirrors.txt
-enabled=1
+name=MRatWork - release-centos6-x86_64
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos6/x86_64/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos6-x86_64-mirrors.txt
+enabled=0
 gpgcheck=0
 
 ## ---------------------------------
 
 [mratwork-release-centos7-noarch]
-name=MRatWork - release-version-noarch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos7/noarch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos7-noarch-mirrors.txt
+name=MRatWork - release-centos7-noarch
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos7/noarch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos7-noarch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-release-centos7-i386]
-name=MRatWork - release-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos7/i386/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos7-i386-mirrors.txt
-enabled=1
+name=MRatWork - release-centos7-i386
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos7/i386/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos7-i386-mirrors.txt
+enabled=0
 gpgcheck=0
 
-[mratwork-release-centos6-x86_64]
-name=MRatWork - release-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos7/x86_64/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos7-x86_64-mirrors.txt
-enabled=1
+[mratwork-release-centos7-x86_64]
+name=MRatWork - release-centos7-x86_64
+baseurl=http://rpms.mratwork.com/repo/mratwork/release/centos7/x86_64/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-release-centos7-x86_64-mirrors.txt
+enabled=0
 gpgcheck=0
 
 ## ---------------------------------
 
 [mratwork-testing-centos5-noarch]
-name=MRatWork - testing-version-noarch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos5/noarch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos5-noarch-mirrors.txt
+name=MRatWork - testing-centos5-noarch
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos5/noarch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos5-noarch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-testing-centos5-i386]
-name=MRatWork - testing-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos5/i386/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos5-i386-mirrors.txt
-enabled=1
+name=MRatWork - testing-centos5-i386
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos5/i386/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos5-i386-mirrors.txt
+enabled=0
 gpgcheck=0
 
 [mratwork-testing-centos5-x86_64]
-name=MRatWork - testing-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos5/x86_64/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos5-x86_64-mirrors.txt
-enabled=1
+name=MRatWork - testing-centos5-x86_64
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos5/x86_64/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos5-x86_64-mirrors.txt
+enabled=0
 gpgcheck=0
 
 ## ---------------------------------
 
 [mratwork-testing-centos6-noarch]
-name=MRatWork - testing-version-noarch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos6/noarch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos6-noarch-mirrors.txt
+name=MRatWork - testing-centos6-noarch
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos6/noarch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos6-noarch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-testing-centos6-i386]
-name=MRatWork - testing-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos6/i386/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos6-i386-mirrors.txt
-enabled=1
+name=MRatWork - testing-centos6-i386
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos6/i386/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos6-i386-mirrors.txt
+enabled=0
 gpgcheck=0
 
 [mratwork-testing-centos6-x86_64]
-name=MRatWork - testing-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos6/x86_64/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos6-x86_64-mirrors.txt
-enabled=1
+name=MRatWork - testing-centos6-x86_64
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos6/x86_64/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos6-x86_64-mirrors.txt
+enabled=0
 gpgcheck=0
 
 ## ---------------------------------
 
 [mratwork-testing-centos7-noarch]
-name=MRatWork - testing-version-noarch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos7/noarch/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos7-noarch-mirrors.txt
+name=MRatWork - testing-centos7-noarch
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos7/noarch/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos7-noarch-mirrors.txt
 enabled=0
 gpgcheck=0
 
 [mratwork-testing-centos7-i386]
-name=MRatWork - testing-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos7/i386/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos7-i386-mirrors.txt
-enabled=1
+name=MRatWork - testing-centos7-i386
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos7/i386/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos7-i386-mirrors.txt
+enabled=0
 gpgcheck=0
 
-[mratwork-testing-centos6-x86_64]
-name=MRatWork - testing-version-arch
-#baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos7/x86_64/
-mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos7-x86_64-mirrors.txt
-enabled=1
+[mratwork-testing-centos7-x86_64]
+name=MRatWork - testing-centos7-x86_64
+baseurl=http://rpms.mratwork.com/repo/mratwork/testing/centos7/x86_64/
+#mirrorlist=https://github.com/mustafaramadhan/rpms/raw/master/mratwork/mirror/mratwork-testing-centos7-x86_64-mirrors.txt
+enabled=0
 gpgcheck=0
