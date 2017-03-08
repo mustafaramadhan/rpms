@@ -1,3 +1,4 @@
 http://rpms.mratwork.com/repo/mratwork/testing/centos7/i386/
 http://rpms.printographic.com/repo/mratwork/testing/centos7/i386/
+http://rpms.mustafa.id/repo/mratwork/testing/centos7/i386/
 http://rpms.armando.id/repo/mratwork/testing/centos7/i386/
