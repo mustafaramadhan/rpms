@@ -2,12 +2,16 @@
 
 T="$(date +%s%N)"
 
+yum clean all
+
 if [ "$(rpm -qa createrepo)" == "" ] ; then
 	yum install createrepo -q -y
 fi
 
-CURRPATH=${PWD}
-CURRBASENAME=${PWD##*/}
+CURRPATH=$(dirname $0)
+cd ${CURRPATH}
+
+CURRBASENAME=${CURRPATH##*/}
 
 if [ "${CURRBASENAME}" != "mratwork" ] ; then
 	echo
@@ -24,6 +28,16 @@ else
 	OPTIONS="--no-database --checksum=sha"
 fi
 
+wget -r -l 1 -N -nd -R "index.html" http://rpms.mratwork.com/repo/mratwork/
+'cp' reposync.phpfile reposync.php
+
+if [ ! -d ${CURRPATH}/mirror ] ; then
+	mkdir -p ${CURRPATH}/mirror
+fi
+
+cd ${CURRPATH}/mirror
+wget -r -l 1 -N -nd -R "index.html" http://rpms.mratwork.com/repo/mratwork/mirror
+
 cd ${CURRPATH}
 
 if [ ! -d ${CURRPATH}/SRPMS ] ; then
@@ -31,6 +45,8 @@ if [ ! -d ${CURRPATH}/SRPMS ] ; then
 fi
 
 chmod -R o-w+r ${CURRPATH}
+
+cd ${CURRPATH}
 
 echo "*** Process for SRPMS..."
 

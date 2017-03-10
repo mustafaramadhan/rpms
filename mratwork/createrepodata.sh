@@ -6,8 +6,12 @@ if [ "$(rpm -qa createrepo)" == "" ] ; then
 	yum install createrepo -q -y
 fi
 
-CURRPATH=${PWD}
-CURRBASENAME=${PWD##*/}
+yum clean all
+
+CURRPATH=$(dirname $0)
+cd ${CURRPATH}
+
+CURRBASENAME=${CURRPATH##*/}
 
 if [ "${CURRBASENAME}" != "mratwork" ] ; then
 	echo
@@ -23,8 +27,6 @@ if [ "$(yum list *yum*|grep '@')" == "" ] ; then
 else
 	OPTIONS="--no-database --checksum=sha"
 fi
-
-cd ${CURRPATH}
 
 if [ ! -d ${CURRPATH}/SRPMS ] ; then
 	mkdir -p ${CURRPATH}/SRPMS
