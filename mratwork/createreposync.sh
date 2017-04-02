@@ -8,7 +8,7 @@ if [ "$(rpm -qa createrepo)" == "" ] ; then
 	yum install createrepo -q -y
 fi
 
-CURRPATH=$(dirname $0)
+CURRPATH=${PWD}
 cd ${CURRPATH}
 
 CURRBASENAME=${CURRPATH##*/}
@@ -39,6 +39,7 @@ cd ${CURRPATH}/mirror
 wget -r -l 1 -N -nd -R "index.html" http://rpms.mratwork.com/repo/mratwork/mirror
 
 cd ${CURRPATH}
+wget -r -l 1 -N -nd -R "index.html" http://rpms.mratwork.com/repo/mratwork
 
 if [ ! -d ${CURRPATH}/SRPMS ] ; then
 	mkdir -p ${CURRPATH}/SRPMS

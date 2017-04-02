@@ -8,7 +8,7 @@ fi
 
 yum clean all
 
-CURRPATH=$(dirname $0)
+CURRPATH=${PWD}
 cd ${CURRPATH}
 
 CURRBASENAME=${CURRPATH##*/}

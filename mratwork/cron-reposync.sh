@@ -1,6 +1,6 @@
 #!/bin/sh
 
-current_dir=$(dirname $0)
+current_dir=${PWD}
 
 current_hour=$(date +%H)
 
