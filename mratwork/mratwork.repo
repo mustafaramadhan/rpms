@@ -198,7 +198,7 @@ gpgcheck=0
 
 # for mariadb
 [mratwork-mariadb]
-name=Kloxo-MR - mariadb 32bit repo
+name=Kloxo-MR - mariadb repo
 baseurl=http://yum.mariadb.org/10.0/centos/$releasever/$basearch/
 enabled=1
 gpgcheck=0
