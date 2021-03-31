@@ -1,5 +1,1 @@
 http://rpms.mratwork.com/repo/mratwork/testing/neutral/i386/
-http://rpms.printographic.com/repo/mratwork/testing/neutral/i386/
-http://rpms.potissima.com/repo/mratwork/testing/neutral/i386/
-http://rpms.armando.id/repo/mratwork/testing/neutral/i386/
-http://rpms.mustafa.id/repo/mratwork/testing/neutral/i386/
